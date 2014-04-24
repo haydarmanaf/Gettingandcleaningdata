@@ -1,17 +1,16 @@
 Gettingandcleaningdata
 ======================
 
-Project
-
 ## Project
 * Download files and unzip
   ( https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip )
 
-* save run_analysis.R to  C:~\UCI HAR Dataset\
+* Save run_analysis.R to  C:~\UCI HAR Dataset\
 
   source("run_analysis.R")
 
 * Run script, which will load all files in the folder and will save two datasets:
+  
+  finaldata.txt(a summarized version by mean and SD parameters)
 
--finaldata.txt(a summarized version with mean and SD
--tidydata.txt(average score by Subject and Activity)
+  tidydata.txt(average score by Subject and Activity)

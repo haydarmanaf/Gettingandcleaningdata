@@ -46,6 +46,6 @@ write.table(finaldata, "finaldata.txt")
 library(data.table)
 dt<- data.table(finaldata)
 tidydata<- dt[, lapply(.SD, mean), by=c("Activity","Subject")]
-tidydata<- meanData[order(meanData$Subject),]
+tidydata<- tidydata[order(tidydata$Subject),]
 
-library(knitr)
+write.table(tidydata, "tidydata.txt")

@@ -7,6 +7,10 @@ Gettingandcleaningdata
 
 * Save run_analysis.R to  C:~\UCI HAR Dataset\
 
+* You MUST intialize "C:~\UCI HAR Dataset\" as your working directory prior to running
+
+* After the file path has been set:
+  
   source("run_analysis.R")
 
 * Run script, which will load all files in the folder and will save two datasets:

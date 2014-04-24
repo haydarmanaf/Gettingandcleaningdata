@@ -3,7 +3,7 @@ Gettingandcleaningdata
 
 ## Project
 * Download files and unzip
-  ( https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip )
+  (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 * Save run_analysis.R to  C:~\UCI HAR Dataset\
 

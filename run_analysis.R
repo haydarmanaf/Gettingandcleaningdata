@@ -6,8 +6,8 @@ myfiles<-myfiles[-c(1:4)]
 
 # read files in multiple dataframes
 
-myvars <- lapply(myfiles, read.table)
-mylabels<-lapply(myinstructions[c(1,2)],read.table,header=FALSE)
+myvars <- lapply(myfiles, read.table,fill=TRUE)
+mylabels<-lapply(myinstructions[c(1,2)],read.table,header=FALSE,fill=TRUE)
 for (i in 1:length(myvars)) assign(paste(basename(myfiles[i])),myvars[[i]])
 for (i in 1:length(mylabels)) assign(paste(basename(myinstructions[i])),mylabels[[i]])
 
@@ -45,3 +45,4 @@ tidydata<- dt[, lapply(.SD, mean), by=c("Activity","Subject")]
 tidydata<- tidydata[order(tidydata$Subject),]
 
 write.table(tidydata, "tidydata.txt")
+

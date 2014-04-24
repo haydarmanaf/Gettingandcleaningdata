@@ -1,7 +1,3 @@
-# set wd to file path
-
-setwd("C:/Users/ULTRABOOK U840/Desktop/R/UCI HAR Dataset")
-
 # save files as lists for accessibility
 
 myfiles<-list.files(recursive=TRUE,pattern="*.txt")
